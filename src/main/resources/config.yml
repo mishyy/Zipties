@@ -20,8 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 #
-# Zipties v${version}
-# Created by tmux/manpage.
 messages:
   prefix: '&2Zipties >'
   commands:

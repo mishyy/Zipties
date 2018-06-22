@@ -1,0 +1,57 @@
+# Zipties v${version}
+# Created by tmux/manpage.
+
+messages:
+  prefix: '&2Zipties >'
+  commands:
+    zipties: '%prefix% &7You were given zipties.'
+    cutters: '%prefix% &7You were given cutters.'
+    player: '%prefix% &cCould not find player matching &7%name%&c.'
+    permission: '%prefix% &cYou do not have permission.'
+    help: |-
+      %prefix% &7Zipties v&a${version}
+      %prefix% &a/%cmd% [help] &7Displays this help message.
+      %prefix% &a/%cmd% release [player] &7Releases the player from their restraints.
+  restrained:
+    already: '%prefix% &cThat player is already restrained!'
+    self: '%prefix% &7You have restrained &a%prisoner%&7!'
+    other: '%prefix% &7You have been restrained by &a%restrainer%&7!'
+  released:
+    restrainer: '%prefix% &7You have released &a%prisoner%&7!'
+    prisoner: '%prefix% &7You have been released!'
+  escaped:
+    restrainer: '%prefix% &a%prisoner% &7has escaped custody!'
+    prisoner: '%prefix% &7You have broken out of your restraints!'
+    almost: '%prefix% &a%percentage%% &7of the restraints are broken!'
+    free: '%prefix% &7You have broken &a%prisoner% &7free!'
+
+items:
+  zipties:
+    type: 'GOLD_HOE'
+    data: 45
+    name: '&eZipties'
+    lore: |-
+      &7Use to restrain players.
+  cutters:
+    type: 'GOLD_HOE'
+    data: 46
+    name: '&eZiptie Breaker'
+    lore: |-
+      &7Used to break zipties.
+
+sounds:
+  restrained:
+    name: 'some_restrained_sound'
+    volume: 1.0
+    pitch: 1.0
+  released:
+    name: 'some_released_sound'
+    volume: 1.0
+    pitch: 1.0
+  escaped:
+    name: 'some_escaped_sound'
+    volume: 1.0
+    pitch: 1.0
+
+cutters:
+  count: 15

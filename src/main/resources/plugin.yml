@@ -1,0 +1,9 @@
+main: org.mhdvsolutions.zipties.Zipties
+name: Zipties
+version: ${version}
+authors: [tmux, manpage]
+
+commands:
+  zipties:
+    aliases: [ziptie, ztie, zipt]
+    usage: /<command>
